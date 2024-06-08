@@ -24,7 +24,7 @@ def home(request):
     images = getAllImagesAndFavouriteList(request)
     #favourite_list = []
     return render(request, 'home.html', {'images': images} )
-
+ 
 def search(request):
     images = getAllImagesAndFavouriteList(request) # images, favourite_list = getAllImagesAndFavouriteList(request)
     search_msg = request.POST.get('query', '')
